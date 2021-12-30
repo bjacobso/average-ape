@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                             </div>
                             <h3 className={'text-center text-xl text-bold text-gray-800 font-extrabold mt-5 mb-2'}>{router.query.feature} / {feature.feature}</h3>
                             <h3 className={'text-center text-lg text-bold text-gray-500 mt-3 mb-3'}>{feature.count} total
-                                ({feature.count / 10_000}%)</h3>
+                                ({(feature.count / 10_000 * 100).toFixed(2)}%)</h3>
                         </div>
                     </div>
                 ) : (
