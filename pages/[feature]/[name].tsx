@@ -36,7 +36,7 @@ const Home: NextPage = () => {
                     <div className={'m-8'}>
                         <div key={feature.feature} className={'flex flex-col justify-items-center items-center'}>
                             <div
-                                className={'bg-gray-200 border-2 shadow-inner border-gray-500 overflow-hidden hover:border-purple-500 hover:bg-purple-200 rounded-lg'}
+                                className={'bg-gray-200 border-2 shadow-inner border-gray-500 overflow-hidden rounded-lg'}
                                 style={{width: '631px', height: '631px', borderRadius: '50px'}}>
                                 <Image src={`/apes/${feature.filename}.png`}
                                        alt={feature.feature}

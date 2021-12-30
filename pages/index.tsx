@@ -30,6 +30,28 @@ const Home: NextPage = () => {
             <h1 className={"text-2xl font-extrabold p-3 text-white bg-black"}>The Average Ape</h1>
 
             <main className={'container mx-auto'}>
+                <div className={'m-8'}>
+                    <div className={'flex flex-col justify-items-center items-center'}>
+                        <div
+                            className={'bg-gray-200 border-2 shadow-inner border-gray-500 overflow-hidden rounded-lg'}
+                            style={{width: '631px', height: '631px', borderRadius: '50px'}}>
+                            <Image src={`/average-all.png`}
+                                   alt={'The Average Ape'}
+                                   width={'631px'}
+                                   height={'631px'}/>
+                        </div>
+                        <h3 className={'text-center text-3xl text-bold text-gray-800 font-extrabold mt-5 mb-2'}>The Average Ape</h3>
+                        <h3 className={'text-center text-lg text-bold text-gray-500 mt-3 mb-3'}>
+                            Computational average of all 10,000 Bored Apes
+                        </h3>
+                        <h3 className={'text-center text-lg text-bold text-gray-500 mt-3 mb-3'}>
+                            Explore by average feature below:
+                        </h3>
+                    </div>
+                </div>
+
+                <hr className={'mb-6'}/>
+
                 {
                     apes.sort(dynamicSort("type")).map((k) => (
                         <div key={k.type} className={'my-3'}>
